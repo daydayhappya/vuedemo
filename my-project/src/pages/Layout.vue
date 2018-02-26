@@ -9,6 +9,8 @@
         <router-view/>
   </div>
   页脚
+      <BackTop></BackTop>
+
 </div>
 </template>
 

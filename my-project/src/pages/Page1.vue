@@ -1,23 +1,32 @@
-<template>
-  <div >
-    page1
-    <img src="../assets/logo.png">
-
-  </div>
-</template>
-
-<script>
-export default {
-  name: 'Page1',
-  data () {
-    return {
-      
-    }
-  }
-}
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
 
 </style>
+<template>
+ <div> 
+    <Progress :percent="25"></Progress>
+    <Progress :percent="45" status="active"></Progress>
+    <Progress :percent="65" status="wrong"></Progress>
+    <Progress :percent="100"></Progress>
+    <Progress :percent="25" hide-info></Progress>
+     <i-Circle
+        :size="250"
+        :trail-width="4"
+        :stroke-width="5"
+        :percent="75"
+        stroke-linecap="square"
+        stroke-color="#43a3fb">
+        <div class="demo-Circle-custom">
+            <h1>42,001,776</h1>
+            <p>消费人群规模</p>
+            <span>
+                总占人数
+                <i>75%</i>
+            </span>
+        </div>
+    </i-Circle>
+</div>
+   
+</template>
+<script>
+export default {};
+</script>
