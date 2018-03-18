@@ -1,0 +1,121 @@
+.redpacket {
+    position: relative;
+    width: 6.90rem;
+    height: 8.52rem;
+    background: rgba(205, 83, 60, 1);
+    box-shadow: 0 .10rem .30rem 0 rgba(0, 0, 0, 0.06);
+    border-radius: .20rem;
+    background-image: url("../../images/redpacket.png");
+    top: 0.5rem;
+    margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.redpacketTips {
+    position: absolute;
+    font-size: 0.24rem;
+    color: rgba(241, 204, 139, 1);
+    bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.redpacketBtn {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-image: url("../../images/redpacketbtn.png");
+    position: absolute;
+    top: 3.8rem;
+    background-size: 100% 100%;
+}
+
+.redpacketBtn.openPlay {
+    background-image: url("../../images/openPlay.png");
+    animation: play 0.8s steps(8) infinite;
+    background-size: 17.60rem 2.2rem;
+}
+
+.dwarDrokerageDetail {
+    top: 0.5rem;
+    width: 6.9rem;
+    height: 7.52rem;
+    background-image: url("../../images/drokerage-detail-bg.png");
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding: 1.64rem 0.9rem 0.9rem 0.9rem;
+    position: relative;
+    .detailConetnt {
+        text-align: center;
+    }
+    .text {
+        font-size: .28rem;
+        line-height: .4rem;
+    }
+    .amountText {
+        font-size: .72rem;
+        line-height: .8rem;
+        vertical-align: middle;
+        color: rgba(252, 144, 32, 1);
+    }
+    .amountUnit {
+        font-size: .28rem;
+        line-height: .4rem;
+        vertical-align: sub;
+    }
+    .message1 {
+        font-size: .24rem;
+        line-height: .33rem;
+        color: rgba(136, 136, 136, 1);
+    }
+    .message2 {
+        font-size: .32rem;
+        line-height: 0.45rem;
+    }
+    .marT6 {
+        margin-top: 0.06rem;
+    }
+    .marT30 {
+        margin-top: 0.3rem;
+    }
+    .marT16 {
+        margin-top: 0.16rem;
+    }
+    .listText{
+        font-size: .28rem;
+        line-height: .4rem;
+        color: rgba(136, 136, 136, 1);
+    }
+    .listValue{
+        font-size: .28rem;
+        line-height: .4rem;
+        color:rgba(51,51,51,1);
+    }
+    .leftBox.padL0{
+        padding-left: 0;
+    }
+    .rightBox.padR0{
+        padding-right: 0;
+    }
+    .margT100{
+        margin-top: 1rem;
+    }
+    .lineHeight2{
+        height: 0.7rem;
+        margin: 0;
+
+    }
+}
+
+@keyframes play {
+    0% {
+        background-position: 0px 0;
+    }
+    100% {
+        background-position: -17.60rem 0;
+    }
+}
+
+// 这个动画一共有10帧，每帧50px，
