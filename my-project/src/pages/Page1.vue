@@ -1,14 +1,13 @@
-<style >
 
-</style>
 <template>
  <div> 
+     <div class = "logo"></div>
     <Progress :percent="25"></Progress>
     <Progress :percent="45" status="active"></Progress>
     <Progress :percent="65" status="wrong"></Progress>
     <Progress :percent="100"></Progress>
     <Progress :percent="25" hide-info></Progress>
-     <i-Circle
+    <i-Circle
         :size="250"
         :trail-width="4"
         :stroke-width="5"
@@ -24,9 +23,23 @@
             </span>
         </div>
     </i-Circle>
+    dddddd
+    
 </div>
    
 </template>
 <script>
-export default {};
+export default {
+
+
+
+};
 </script>
+<style >
+.logo{
+    background-image: url("../assets/logo.png");
+    background-size:100% 100%;
+    width:100px;
+    height:100px;
+}
+</style>
