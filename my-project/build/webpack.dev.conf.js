@@ -76,7 +76,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 })
 var htmlWebpackPlugins = [];
 Object.keys(devWebpackConfig.entry).forEach(function (name) {
-  console.log(name);
+  console.log(`请访问host/${name}.html`);
   htmlWebpackPlugins.push(new HtmlWebpackPlugin({
     filename: name+".html",
     template: 'index.html',
